@@ -1,0 +1,81 @@
+<html>
+  <body>
+    <h1>Ajout d'un nouvel article</h1>
+    <form>
+      <fieldset>
+        <legend>Informations publiques</legend>
+        <p>
+          <label>Nom : <input id="name" type="text" required></label>
+        </p>
+        <p>
+          <label>Description : <textarea id="description" required></textarea></label>
+        </p>
+        <p>
+          <label>Photo : <input type="file"></label>
+        </p>
+        <p>
+          Prix
+          <label>
+            <input type="radio" id="prix_libre" name="type_prix" value="libre" checked>Libre
+          </label>
+          <label>
+            <input type="radio" id="prix_fixe" name="type_prix" value="fixe">Fixe
+          </label>
+          <input type="number" id="prix_valeur" name="prix" min="0" placeholder="prix en €/EUS">
+        </p>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Informations Konpon Txoko</legend>
+        <p>
+          <label>
+            Référence <input name="reference" type="text" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            Emplacement <input name="emplacement" type="text" required>
+          </label>
+        </p>
+        <p>
+          <label>
+            Type de déchet <select name="type_dechet" required>
+              <option value="">--Choisissez un type de déchet--</option>
+              <option value="bois">bois</option>
+              <option value="metal">métal</option>
+              <option value="electromenager">électroménager</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Poids <input name="poids" type="number" min="0" required placeholder="poids en kg">
+          </label>
+        </p>
+      </fieldset>
+      <input type="submit"><button>Annuler</button>
+    </form>
+  </body>
+ 
+  <style></style>
+
+  <script type="text/javascript">
+  const freePriceRadio = document.getElementById('prix_libre');
+  const fixedPriceRadio = document.getElementById('prix_fixe');
+  const priceInput = document.getElementById('prix_valeur');
+
+  fixedPriceRadio.addEventListener('change', updatePriceInputVisiblity);
+  freePriceRadio.addEventListener('change', updatePriceInputVisiblity);
+  updatePriceInputVisiblity();
+
+  function updatePriceInputVisiblity() {
+    if (fixedPriceRadio.checked === false) {
+      priceInput.style.display = 'none';
+      priceInput.required = false;
+    } else {
+      priceInput.style.display = '';
+      priceInput.required = true;
+    }
+  }
+  </script>
+</html>

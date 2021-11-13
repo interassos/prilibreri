@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script src="./article-list-item.js"></script>
+  <style type="text/css">
+    body {
+      padding: 10px;
+    }
+    .ArticleList {
+      margin: 10px;
+    }
+    .ArticleList-item {
+      display: block;
+      border: 2px solid deepskyblue;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    .ArticleList-item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    .ArticleList-item:nth-child(odd) {
+      background: #eee;
+    }
+    .ArticleList-item:nth-child(even) {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+<h1>Liste des articles en vente</h1>
+<div class="ArticleList">
+  <a class="ArticleList-item">
+    <ktrc-article-list-item title="Aspirateur Rowenta 1000W"
+    photo="https://www.rowenta.fr/medias/?context=bWFzdGVyfGltYWdlc3wzMzUwNHxpbWFnZS9qcGVnfGltYWdlcy9oNTMvaGVkLzE1MDE5NjA3MzkyMjg2LmpwZ3xhZjUxMDljZWZiMzFjMDg0YmM0Y2I5NTQ2MmJmNWFhYWE0YjgxOGI4ZWFkMDIzMzgzNWMxMmY0Y2FjZDg2Yzhh"
+    />
+  </a>
+  <a class="ArticleList-item">
+    <ktrc-article-list-item title="Affiche de cinéma James Bond" price="1"/>
+  </a>
+  <a class="ArticleList-item">
+    <ktrc-article-list-item title="Affiche de cinéma Rambo" price="1"/>
+  </a><!--
+  <ktrc-article-list-item class="ArticleList-item" title="Affiche de cinéma James Bond" price="1"/>
+  <ktrc-article-list-item class="ArticleList-item" title="Affiche de cinéma Rambo" price="1"/>
+  <ktrc-article-list-item class="ArticleList-item" title="Affiche de cinéma Le Roi Lion" price="1"/>
+  <ktrc-article-list-item class="ArticleList-item" title="Affiche de cinéma Léon" price="1"/>
+  <ktrc-article-list-item class="ArticleList-item" title="Bureau ikea Skrøll"/>-->
+</div>
+</body>
+</html>

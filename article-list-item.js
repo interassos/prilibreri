@@ -13,13 +13,13 @@ class ArticleListItem extends HTMLElement {
     display: flex;
     }
     .ArticleListItem-photo {
-      flex: 0 0 30px;
+      max-width: 60px;
     }
     .ArticleListItem-photoPlaceholder {
       text-align: center;
       font-size: 0.6rem;
-       flex: 0 0 30px;
-       height: 30px;
+       flex: 0 0 60px;
+       height: 60px;
        background: #bbb;
     }
     .ArticleListItem-title {

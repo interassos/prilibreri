@@ -1,8 +1,7 @@
 <html>
   <head>
-
   </head>
-  <body>
+  <body  style="padding: 50px">
     <div class="ArticleDetail">
       <h1 class="ArticleDetail-title">Aspirateur Rowenta 800W</h1>
       <section class="ArticleDetail-infos">
@@ -17,6 +16,36 @@
           Alliant performance et confort, Silence Force Cyclonic 5★ offre une expérience de nettoyage inégalée. Cet aspirateur sans sac haute performance est d'abord muni d'une tête d'aspiration à 2 positions pour un dépoussiérage impeccable. Equipé également des accessoires Animal Care et de la technologie Cyclonic, Silence Force Cyclonic 5★ vous assure une efficacité de nettoyage ultime.
         </p>
       </section>
+      <section class="ArticleDetail-reservation">
+        <form class="ArticleDetail-form">
+          <fieldset>
+            <legend>Réserver cette article</legend>
+            <p>
+              Vous pouvez ici réserver cet article et venir le chercher dans les 7 jours.
+            </p>
+            <p>Le réglement s'effectue sur place.</p>
+            <p><label for="name">Nom : <input type="text" name="name"></label></p>
+            <p><label for="email">Adresse email : <input type="email" name="email"></label></p>
+            <input type="submit">
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <div style="position: fixed; bottom: 0; left: 0; width: 100%; background: #ddd; padding: 10px; display: flex; justify-content: space-around;">
+      <div>
+        <span>Pages visiteurs :</span>
+        <a href="./articles.html">Liste des articles</a> /
+        <a href="./detail.html">Détail d'un article</a>
+      </div>
+      <div style="">
+        <span>Pages administrateurs :</span>
+        <a href="./saisie.html">Saisie d'un nouvel article</a> / 
+        <span style="color: #aaa; cursor: not-allowed;">Liste des articles réservés</span>
+      </div>
     </div>
   </body>
+  <script type="text/javascript">
+    const price = document.getElementsByClassName('ArticleDetail-price')[0];
+    price.textContent = 'libre';
+  </script>
 </html>

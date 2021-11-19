@@ -21,11 +21,17 @@
           <fieldset>
             <legend>Réserver cette article</legend>
             <p>
-              Vous pouvez ici réserver cet article et venir le chercher dans les 7 jours.
+              Vous pouvez ici réserver cet article et venir le chercher dans les 7 jours.<br>
+              Passé ce délai, l'article sera remis en vente.<br>
+              Pour toute question, annulation ou renseignement n'hésitez pas à nous contacter au 06.98.96.01.85 du lundi au samedi de 10h à 12h et de 14h à 18h.
             </p>
-            <p>Le réglement s'effectue sur place.</p>
-            <p><label for="name">Nom : <input type="text" name="name"></label></p>
-            <p><label for="email">Adresse email : <input type="email" name="email"></label></p>
+            <p>Les réglements s'effectuent sur place.<br>
+              Nous acceptons les paiements par Eusko, Euskopay, Euro, CB (via Helloasso) et chèques à l'ordre de Konpon Txoko.
+            </p>
+            <p><label for="name">Nom* : <input type="text" name="name" required></label></p>
+            <p><label for="phone">Téléphone* : <input type="tel" name="phone"></label></p>
+            <p><label for="email">Adresse email* : <input type="email" name="email"></label></p>
+            <p>(* champs obligatoires)</p>
             <input type="submit">
           </fieldset>
         </form>

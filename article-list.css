@@ -1,0 +1,18 @@
+.ArticleList {
+  margin: 10px;
+}
+.ArticleList-item {
+  display: block;
+  border: 2px solid deepskyblue;
+  border-radius: 3px;
+  padding: 5px;
+}
+.ArticleList-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.ArticleList-item:nth-child(odd) {
+  background: #eee;
+}
+.ArticleList-item:nth-child(even) {
+  background: #ddd;
+}

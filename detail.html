@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="./menu.js"></script>
   </head>
   <body class="ArticleDetail" style="padding: 50px">
     <a class="ArticleDetail-back" href="./index">&lt;- Retour à la liste des articles</a>
@@ -36,18 +37,7 @@
           </fieldset>
         </form>
       </section>
-    <div style="position: fixed; bottom: 0; left: 0; width: 100%; background: #ddd; padding: 10px; display: flex; justify-content: space-around;">
-      <div>
-        <span>Pages visiteurs :</span>
-        <a href="./index">Liste des articles</a> /
-        <a href="./detail">Détail d'un article</a>
-      </div>
-      <div style="">
-        <span>Pages administrateurs :</span>
-        <a href="./new">Saisie d'un nouvel article</a> /
-        <span style="color: #aaa; cursor: not-allowed;">Liste des articles réservés</span>
-      </div>
-    </div>
+    <prilibreri-menu/>
   </body>
   <script type="text/javascript">
     const price = document.getElementsByClassName('ArticleDetail-price')[0];

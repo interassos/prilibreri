@@ -10,7 +10,7 @@
       grid-template-areas: 
       ". . ."
       "new pending archives"
-      ". . .";
+      ". . database";
     }
     .Admin > * {
       display: flex;
@@ -35,6 +35,10 @@
       grid-area: archives;
       background: #eee;
     }
+    .Admin-database {
+      grid-area: database;
+      background: #ccc;
+    }
   </style>
   <script type="text/javascript">
   </script>
@@ -43,5 +47,6 @@
     <a class="Admin-new" href="./new">Nouvel article</a>
     <a class="Admin-pending" href="./pending">Articles en attente</a>
     <a class="Admin-archives" href="./archives">Archives</a>
+    <a class="Admin-database" href="./samples/events.json">Voir le contenu de la base de données</a>
   </body>
 </html>

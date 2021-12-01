@@ -1,0 +1,52 @@
+[
+  {
+    "index": 1,
+    "evenement": "nouvel_article",
+    "article": "ELECTROMEN-7-103",
+    "titre": "Pañal para la bebé",
+    "description": "Biziki polita da",
+    "prix": 0,
+    "photo": "IMG_39034.jpg",
+    "emplacement": "PLACAR1-DROITE-HAUT",
+    "type_dechet": 1,
+    "poids": 4.5
+  },
+  {
+    "index": 2,
+    "evenement": "reservation",
+    "article": "ELECTROMEN-7-103",
+    "email": "patxi_du_64@lycos.fr",
+    "telephone": "0549883110",
+    "date": "19-12-2021"
+  },
+  {
+    "index": 3,
+    "evenement": "retrait",
+    "article": "ELECTROMEN-7-103"
+  },
+  {
+    "index": 4,
+    "evenement": "nouvel_article",
+    "article": "JEUXSOCIETES-1-17",
+    "titre": "Docteur Maboul",
+    "description": "🤡",
+    "prix": 2,
+    "photo": "IMG_390.jpg",
+    "emplacement": "ETAGERES-3-GAUCHE",
+    "type_dechet": 5,
+    "poids": 0.9
+  },
+  {
+    "index": 5,
+    "evenement": "reservation",
+    "article": "JEUXSOCIETES-1-17",
+    "email": "patxi_du_64@lycos.fr",
+    "telephone": "0549883110",
+    "date": "29-12-2021"
+  },
+  {
+    "index": 6,
+    "evenement": "annulation_reservation",
+    "article": "JEUXSOCIETES-1-17"
+  }
+]
